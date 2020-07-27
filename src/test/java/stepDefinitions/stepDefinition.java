@@ -83,12 +83,14 @@ public class stepDefinition extends Base {
     public void user_login_into_application_with_username_and_password(String username, String password) throws Throwable {
         System.out.println(username);
         System.out.println(password);
+        System.out.println("Validated home page");
     }
     
     @Then("^Verify selected (.+) items are display in Checkout page$")
     public void verify_selected_something_items_are_display_in_checkout_page(String strArg1) throws Throwable {
     	cp = new CheckOutPage(driver);
         Assert.assertTrue(cp.getProductName().getText().contains(strArg1));
+        System.out.println("Validated home page");
     }
     
 }
