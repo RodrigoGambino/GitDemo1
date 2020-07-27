@@ -22,7 +22,7 @@ public class MyStepDefinitions {
 	@Given("^User is on Greencart landing page$")
     public void user_is_on_greencart_landing_page() throws Throwable {
 		driver = Base.getDriver();
-        
+		System.out.println("Deciding the browser to open");
     }
 
     @When("^User searched for (.+) Vegetable$")
