@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-27T20:42:48.552Z",
+        "line": 4,
+        "name": "Search for items and validate results",
+        "description": "",
+        "id": "search-and-place-order-for-vegetables;search-for-items-and-validate-results",
+        "after": [
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12192000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Greencart landing page",
+            "match": {
+              "location": "stepDefinitions.MyStepDefinitions.user_is_on_greencart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2224000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User searched for Cucumber Vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.MyStepDefinitions.user_searched_for_something_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"Cucumber\" result are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 1
+                }
+              ],
+              "location": "stepDefinitions.MyStepDefinitions.something_result_are_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search and place order for Vegetables",
+    "description": "",
+    "id": "search-and-place-order-for-vegetables",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/search.feature",
+    "tags": []
+  }
+]
