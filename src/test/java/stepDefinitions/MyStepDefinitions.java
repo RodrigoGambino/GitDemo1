@@ -29,11 +29,13 @@ public class MyStepDefinitions {
     public void user_searched_for_something_vegetable(String strArg1) throws Throwable {
     	h = new HomePage(driver);
         h.getSearch().sendKeys(strArg1);
+        System.out.println("Deciding the browser to open");
         Thread.sleep(2000);
     }
 
     @Then("^\"([^\"]*)\" result are displayed$")
     public void something_result_are_displayed(String strArg1) throws Throwable {
+    	System.out.println("Deciding the browser to open");
         Assert.assertTrue(driver.findElement(By.cssSelector("h4.product-name")).getText().contains(strArg1));
     }
     

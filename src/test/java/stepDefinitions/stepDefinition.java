@@ -39,6 +39,7 @@ public class stepDefinition extends Base {
     @Then("^Check if browser is started$")
     public void check_if_browser_is_started() throws Throwable {
     	System.out.println("Browser is started");
+    	System.out.println("Deciding the browser to open");
     }
 	
 	@Given("^User is on NetBanking landing page$")
@@ -51,6 +52,8 @@ public class stepDefinition extends Base {
     public void user_login_into_application_with_username_something_and_password_something(String strArg1, String strArg2) throws Throwable {
         System.out.println(strArg1);
         System.out.println(strArg2);
+        System.out.println("Browser is triggered");
+        System.out.println("Browser is triggered");
     }
 
     @Then("^Home page is populated$")
